@@ -257,3 +257,65 @@ ul {
 Nav
 ===============
 */
+.header{
+  box-shadow: var(--shadow-2);
+  background: var(--white);
+}
+.header .section-center{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+  /* grid-template-columns: 1fr 1fr; */
+  /* justify-position: space-around; */
+}
+.nav{
+}
+.nav li{
+  display: inline-block;
+  margin-right: 1rem;
+}
+.nav a{
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--grey-500);
+}
+.header h4{
+  margin: 0;
+  font-weight: 700;
+  color: #645cff;
+  letter-spacing: 2px;
+}
+.main{
+  height: calc(100vh - 4rem);
+}
+.hero{
+  align-self: center;
+}
+.hero h1{
+  background: var(--grey-800);
+  max-width: 700px;
+  margin: auto auto;
+  color: var(--white);
+  text-align: center;
+  border-radius: var(--borderRadius);
+  padding: 1rem 1rem;
+}
+.hero span{
+  color: #645cff;
+  font-weight: 700;
+}
+.hero-btn{
+  color: var(--grey-800);
+  background: var(--grey-50);
+  border: 2px solid var(--grey-700);
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
