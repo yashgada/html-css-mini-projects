@@ -257,65 +257,70 @@ ul {
 Nav
 ===============
 */
-.header{
+nav{
   box-shadow: var(--shadow-2);
   background: var(--white);
-}
-.header .section-center{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 4rem;
+  display: grid;
+  align-items: center;
+}
+.nav-center{
   width: 90vw;
-  max-width: 600px;
-  margin: 0 auto;
-  /* grid-template-columns: 1fr 1fr; */
-  /* justify-position: space-around; */
+  max-width: var(--fixed-width);
+  margin: 0 auto ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav{
+.nav-center h4{
+  font-weight: 600;
+  color: var(--primary-500);
+  margin-bottom: 0;
+  letter-spacing: 2px;
 }
-.nav li{
-  display: inline-block;
-  margin-right: 1rem;
+.nav-links{
+  display: flex;
+  gap: 0 1rem;
 }
-.nav a{
+nav a{
   text-transform: capitalize;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: var(--grey-500);
+  color: var(--primary-900);
+  transition: var(--transition);
+  font-size: 1rem;
+  /* font-weight: bold; */
 }
-.header h4{
-  margin: 0;
-  font-weight: 700;
-  color: #645cff;
-  letter-spacing: 2px;
+nav a:hover{
+  color: var(--primary-500);
 }
-.main{
+main{
+  display: grid;
+  place-items: center;
   height: calc(100vh - 4rem);
-}
-.hero{
-  align-self: center;
-}
-.hero h1{
-  background: var(--grey-800);
-  max-width: 700px;
-  margin: auto auto;
-  color: var(--white);
   text-align: center;
+}
+main h2{
+  background: var(--black);
+  color: white;
+  padding: 1rem;
   border-radius: var(--borderRadius);
-  padding: 1rem 1rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 5px;
 }
-.hero span{
-  color: #645cff;
-  font-weight: 700;
-}
-.hero-btn{
-  color: var(--grey-800);
-  background: var(--grey-50);
-  border: 2px solid var(--grey-700);
-  padding: 0.75rem 1.5rem;
+main span{
   text-transform: uppercase;
+  color: var(--primary-500);
+}
+.btn-hero{
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  background: transparent;
+  color: var(--primary-900);
+  border: 2px solid var(--black);
   font-weight: bold;
-  letter-spacing: 2px;
-  margin: 0 auto;
+  letter-spacing: 4px;
+}
+.btn-hero:hover{
+  background: var(--black);
+  color: var(--white);
 }
