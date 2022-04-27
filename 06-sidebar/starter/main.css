@@ -5,7 +5,7 @@
 }
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 html {
   font-size: 100%;
 } /*16px*/
@@ -42,8 +42,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto', sans-serif;
-  --bodyFont: 'Nunito', sans-serif;
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
@@ -257,3 +257,70 @@ ul {
 Sidebar
 ===============
 */
+.sidebar-toggle{
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  background: transparent;
+  border: transparent;
+  color: var(--primary-500);
+  transition: var(--transition);
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite; 
+}
+.sidebar-toggle:hover {
+  color: var(--primary-700);
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* sidebar */
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* for small screens, we cover the whole screen with the sidebar when active */
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  box-shadow: var(--shadow-2);
+  transition: var(--transition);
+  /* todo hide sidebar */
+}
+/* todo show sidebar */
+@media screen and (min-width:676px) {
+  .sidebar{
+    /* this makes sense for 676px */
+    width: 400px;
+  }
+}
+.sidebar-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.close-btn{
+  font-size: 1.75rem;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--red-dark);
+}
+.close-btn:hover{
+  transform: rotate(360deg);
+}
