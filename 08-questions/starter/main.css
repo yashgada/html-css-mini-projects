@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
 *,
 ::after,
 ::before {
@@ -5,7 +7,6 @@
 }
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
 html {
   font-size: 100%;
 } /*16px*/
@@ -260,40 +261,37 @@ Questions
 ===============
 */
 /* gold color in css vars */
-
-.questions {
+.questions{
   margin-top: 10rem;
 }
-.questions .title {
+.questions .title{
   color: var(--gold);
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes',cursive;
 }
-.section-center {
+.section-center{
   width: 90vw;
   margin: 0 auto;
   max-width: var(--fixed-width);
   margin-top: 3rem;
 }
-
-.question {
+.question{
   background: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   padding: 1.5rem 1rem;
   margin-bottom: 2rem;
 }
-.question-title {
+.question-title{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.question-title p {
+.question-title p{
   margin: 0;
   letter-spacing: var(--letterSpacing);
   color: var(--grey-700);
 }
-
-.question-btn {
+.question-btn{
   font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
@@ -301,36 +299,32 @@ Questions
   color: var(--gold);
   transition: var(--transition);
 }
-.question-btn:hover {
+.question-btn:hover{
   transform: rotate(90deg);
 }
-
-.question-text {
+.question-text{
   padding-top: 1rem;
   margin-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
-
-.question-text p {
+.question-text p{
   margin: 0;
   color: var(--grey-500);
 }
 
 /* hide text */
-.question-text {
+.question-text{
   display: none;
 }
-.minus-icon {
+.minus-icon{
   display: none;
 }
-
-.show-text .question-text {
+.show-text .question-text{
   display: block;
 }
-
-.show-text .minus-icon {
+.show-text .minus-icon{
   display: inline;
 }
-.show-text .plus-icon {
+.show-text .plus-icon{
   display: none;
 }
